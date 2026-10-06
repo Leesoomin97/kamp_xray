@@ -1,0 +1,7 @@
+﻿grouping_rule,n_folds,temporal_component_violations,forced_similarity_violations,minimum_cross_fold_gap_seconds,cross_fold_adjacent_pairs_le3s,cross_fold_adjacent_pairs_le6s,cross_fold_adjacent_pairs_le10s,cross_fold_adjacent_pairs_le30s,cross_fold_adjacent_pairs_le60s,same_day_adjacent_sequences_in_different_folds,classification,notes
+6s,5,0,0,5,0,2,21,32,33,104,PASS with residual boundary risk,"Different temporal groups on the same day are residual dependence risk or ordinary same-day sampling, not automatically leakage."
+6s,4,0,0,4,0,3,23,34,35,107,PASS with residual boundary risk,"Different temporal groups on the same day are residual dependence risk or ordinary same-day sampling, not automatically leakage."
+6s,3,0,0,4,0,2,17,25,26,94,PASS with residual boundary risk,"Different temporal groups on the same day are residual dependence risk or ordinary same-day sampling, not automatically leakage."
+10s,5,0,0,4,0,2,3,14,15,87,PASS with residual boundary risk,"Different temporal groups on the same day are residual dependence risk or ordinary same-day sampling, not automatically leakage."
+10s,4,0,0,4,0,2,3,13,14,84,PASS with residual boundary risk,"Different temporal groups on the same day are residual dependence risk or ordinary same-day sampling, not automatically leakage."
+10s,3,0,0,4,0,2,3,12,13,78,PASS with residual boundary risk,"Different temporal groups on the same day are residual dependence risk or ordinary same-day sampling, not automatically leakage."

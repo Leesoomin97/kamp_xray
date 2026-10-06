@@ -1,0 +1,5 @@
+﻿competition_area,finding,evidence,limitation
+AI 예측모델 개발,Frozen four-fold OOF baseline,02a_oof_summary.csv,Development validation only
+영향요인 및 오류분석,GT/image-derived subgroup associations,02a_error_by_*.csv and 02a_interaction_errors.csv,No causality
+창의성·차별성,Artifact-controlled paired representation design,Stage 1D plus paired Stage 2A runs,Requires completed ablation
+현장 활용,Confidence retained for later safety analysis,02a_confidence_sweep.csv,No operational threshold selected

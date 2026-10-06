@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">Consecutive capture gaps within machine/SN/date</text>
+<line x1="75" y1="465" x2="865" y2="465" stroke="black"/>
+<line x1="75" y1="55" x2="75" y2="465" stroke="black"/>
+<rect x="75.00" y="55.00" width="18.75" height="410.00" fill="#4472c4"/>
+<rect x="94.75" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="114.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="134.25" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="154.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="173.75" y="463.94" width="18.75" height="1.06" fill="#4472c4"/>
+<rect x="193.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="213.25" y="463.94" width="18.75" height="1.06" fill="#4472c4"/>
+<rect x="233.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="252.75" y="462.88" width="18.75" height="2.12" fill="#4472c4"/>
+<rect x="272.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="292.25" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="312.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="331.75" y="463.94" width="18.75" height="1.06" fill="#4472c4"/>
+<rect x="351.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="371.25" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="391.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="410.75" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="430.50" y="462.88" width="18.75" height="2.12" fill="#4472c4"/>
+<rect x="450.25" y="410.97" width="18.75" height="54.03" fill="#4472c4"/>
+<rect x="470.00" y="449.11" width="18.75" height="15.89" fill="#4472c4"/>
+<rect x="489.75" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="509.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="529.25" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="549.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="568.75" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="588.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="608.25" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="628.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="647.75" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="667.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="687.25" y="463.94" width="18.75" height="1.06" fill="#4472c4"/>
+<rect x="707.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="726.75" y="463.94" width="18.75" height="1.06" fill="#4472c4"/>
+<rect x="746.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="766.25" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="786.00" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="805.75" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="825.50" y="465.00" width="18.75" height="0.00" fill="#4472c4"/>
+<rect x="845.25" y="463.94" width="18.75" height="1.06" fill="#4472c4"/>
+<text x="75" y="490" font-family="sans-serif" font-size="12">1</text>
+<text x="865" y="490" text-anchor="end" font-family="sans-serif" font-size="12">2.906e+04</text>
+<text x="470.0" y="520" text-anchor="middle" font-family="sans-serif" font-size="14">seconds</text>
+<text x="18" y="260.0" transform="rotate(-90 18 260.0)" text-anchor="middle" font-family="sans-serif" font-size="14">count</text>
+</svg>

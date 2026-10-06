@@ -1,0 +1,15 @@
+﻿confidence_threshold,tp,fn,recall,localization_failure_at_threshold,below_threshold_or_absent,fp,precision,f1,fp_valid,fp_source
+0.001,1134,13,0.988666085440279,13,0,,,,False,
+0.005,1133,14,0.987794245858762,12,2,,,,False,
+0.01,1130,17,0.985178727114211,12,5,,,,False,
+0.02,1126,21,0.981691368788143,11,10,,,,False,
+0.05,1124,23,0.979947689625109,11,12,,,,False,
+0.1,1122,25,0.978204010462075,11,14,,,,False,
+0.15,1122,25,0.978204010462075,11,14,,,,False,
+0.2,1121,26,0.977332170880558,11,15,,,,False,
+0.25,1121,26,0.977332170880558,11,15,51.0,0.9564846416382252,0.966796032772747,True,outputs\tables\02b_b2_visibility_error_analysis_v1\02a_false_positive_analysis.csv
+0.3,1121,26,0.977332170880558,11,15,40.0,0.9655469422911284,0.9714038128249568,True,outputs\tables\02b_b2_visibility_error_analysis_v1\02a_false_positive_analysis.csv
+0.4,1121,26,0.977332170880558,11,15,30.0,0.9739357080799305,0.9756309834638817,True,outputs\tables\02b_b2_visibility_error_analysis_v1\02a_false_positive_analysis.csv
+0.5,1115,32,0.972101133391456,11,21,27.0,0.9763572679509632,0.9742245522062035,True,outputs\tables\02b_b2_visibility_error_analysis_v1\02a_false_positive_analysis.csv
+0.6,600,547,0.5231037489102005,5,542,14.0,0.9771986970684039,0.6814310051107325,True,outputs\tables\02b_b2_visibility_error_analysis_v1\02a_false_positive_analysis.csv
+0.7,30,1117,0.026155187445510025,0,1117,0.0,1.0,0.05097706032285472,True,outputs\tables\02b_b2_visibility_error_analysis_v1\02a_false_positive_analysis.csv

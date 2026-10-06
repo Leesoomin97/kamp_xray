@@ -1,0 +1,9 @@
+﻿feature,group_or_range,object_count,tp,fn,recall,fold_coverage,fold_ids,notes
+bbox_min_side_px,"Q1 (-inf,8]",295,280,15,0.9491525423728814,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_min_side_px,"Q2 (8,10]",480,474,6,0.9875,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_min_side_px,"Q3 (10,11]",144,141,3,0.9791666666666666,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_min_side_px,"Q4 (11,inf)",228,217,11,0.9517543859649122,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_area_ratio,"Q1 (-inf,0.00060216466]",293,272,21,0.9283276450511946,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_area_ratio,"Q2 (0.00060216466,0.00076254385]",284,282,2,0.9929577464788732,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_area_ratio,"Q3 (0.00076254385,0.00094364801]",297,295,2,0.9932659932659933,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_area_ratio,"Q4 (0.00094364801,inf)",273,263,10,0.9633699633699634,4,1|2|3|4,Exploratory quantile group; not an operational threshold.

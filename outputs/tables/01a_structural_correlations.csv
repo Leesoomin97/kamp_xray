@@ -1,0 +1,8 @@
+﻿variable_x,variable_y,n,pearson_r,spearman_rho,interpretation_scope
+bbox_area_ratio,bbox_min_side_px,1147,0.3854196719131615,0.35880174917007024,Structural association only; correlation does not imply causation.
+bbox_min_side_px,image_edge_distance_px,1147,0.4050229002109066,0.4354088014774899,Structural association only; correlation does not imply causation.
+bbox_min_side_px,bbox_aspect_ratio,1147,0.12245805557328156,0.19018643466911,Structural association only; correlation does not imply causation.
+bbox_center_x_norm,bbox_area_ratio,1147,-0.22376739643557966,-0.33751044071662367,Structural association only; correlation does not imply causation.
+bbox_center_y_norm,bbox_area_ratio,1147,0.05379747554537692,0.0555620133627909,Structural association only; correlation does not imply causation.
+bbox_center_x_norm,bbox_min_side_px,1147,0.04615745090022861,0.1582787562202806,Structural association only; correlation does not imply causation.
+bbox_center_y_norm,bbox_min_side_px,1147,-0.17177427834076106,-0.15412088194331247,Structural association only; correlation does not imply causation.

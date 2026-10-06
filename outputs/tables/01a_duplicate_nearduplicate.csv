@@ -1,0 +1,7 @@
+﻿stem_a,stem_b,same_machine,same_date,time_gap_seconds,exact_duplicate,similarity_metric,similarity_value,near_duplicate_flag,notes
+002_20200623_163059(6),002_20200624_043128(1),TRUE,FALSE,,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.97265625,TRUE,Flag is diagnostic only; pair was not collapsed.
+002_20200624_162527(8),002_20200714_083106(2),TRUE,FALSE,,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,TRUE,Flag is diagnostic only; pair was not collapsed.
+002_20200624_203021(9),002_20200714_083106(2),TRUE,FALSE,,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,TRUE,Flag is diagnostic only; pair was not collapsed.
+001_20200821_163353(8),002_20200629_082837(0),FALSE,FALSE,,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.5234375,FALSE,Representative clearly non-duplicate control pair from all-pairs screening.
+001_20200821_163349(7),002_20200629_082823(5),FALSE,FALSE,,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.53125,FALSE,Representative clearly non-duplicate control pair from all-pairs screening.
+001_20200623_003532(5),002_20200629_082831(3),FALSE,FALSE,,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.53515625,FALSE,Representative clearly non-duplicate control pair from all-pairs screening.

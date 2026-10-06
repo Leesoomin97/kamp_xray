@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">BBox-region IQR</text>
+<line x1="75" y1="465" x2="865" y2="465" stroke="black"/>
+<line x1="75" y1="55" x2="75" y2="465" stroke="black"/>
+<rect x="75.00" y="447.92" width="25.33" height="17.08" fill="#4472c4"/>
+<rect x="101.33" y="461.58" width="25.33" height="3.42" fill="#4472c4"/>
+<rect x="127.67" y="427.42" width="25.33" height="37.58" fill="#4472c4"/>
+<rect x="154.00" y="383.00" width="25.33" height="82.00" fill="#4472c4"/>
+<rect x="180.33" y="406.92" width="25.33" height="58.08" fill="#4472c4"/>
+<rect x="206.67" y="314.67" width="25.33" height="150.33" fill="#4472c4"/>
+<rect x="233.00" y="184.83" width="25.33" height="280.17" fill="#4472c4"/>
+<rect x="259.33" y="369.33" width="25.33" height="95.67" fill="#4472c4"/>
+<rect x="285.67" y="154.08" width="25.33" height="310.92" fill="#4472c4"/>
+<rect x="312.00" y="143.83" width="25.33" height="321.17" fill="#4472c4"/>
+<rect x="338.33" y="362.50" width="25.33" height="102.50" fill="#4472c4"/>
+<rect x="364.67" y="55.00" width="25.33" height="410.00" fill="#4472c4"/>
+<rect x="391.00" y="167.75" width="25.33" height="297.25" fill="#4472c4"/>
+<rect x="417.33" y="410.33" width="25.33" height="54.67" fill="#4472c4"/>
+<rect x="443.67" y="198.50" width="25.33" height="266.50" fill="#4472c4"/>
+<rect x="470.00" y="277.08" width="25.33" height="187.92" fill="#4472c4"/>
+<rect x="496.33" y="389.83" width="25.33" height="75.17" fill="#4472c4"/>
+<rect x="522.67" y="236.08" width="25.33" height="228.92" fill="#4472c4"/>
+<rect x="549.00" y="212.17" width="25.33" height="252.83" fill="#4472c4"/>
+<rect x="575.33" y="413.75" width="25.33" height="51.25" fill="#4472c4"/>
+<rect x="601.67" y="290.75" width="25.33" height="174.25" fill="#4472c4"/>
+<rect x="628.00" y="437.67" width="25.33" height="27.33" fill="#4472c4"/>
+<rect x="654.33" y="348.83" width="25.33" height="116.17" fill="#4472c4"/>
+<rect x="680.67" y="376.17" width="25.33" height="88.83" fill="#4472c4"/>
+<rect x="707.00" y="444.50" width="25.33" height="20.50" fill="#4472c4"/>
+<rect x="733.33" y="338.58" width="25.33" height="126.42" fill="#4472c4"/>
+<rect x="759.67" y="417.17" width="25.33" height="47.83" fill="#4472c4"/>
+<rect x="786.00" y="458.17" width="25.33" height="6.83" fill="#4472c4"/>
+<rect x="812.33" y="441.08" width="25.33" height="23.92" fill="#4472c4"/>
+<rect x="838.67" y="461.58" width="25.33" height="3.42" fill="#4472c4"/>
+<text x="75" y="490" font-family="sans-serif" font-size="12">2.5</text>
+<text x="865" y="490" text-anchor="end" font-family="sans-serif" font-size="12">22.25</text>
+<text x="470.0" y="520" text-anchor="middle" font-family="sans-serif" font-size="14">object IQR</text>
+<text x="18" y="260.0" transform="rotate(-90 18 260.0)" text-anchor="middle" font-family="sans-serif" font-size="14">count</text>
+</svg>

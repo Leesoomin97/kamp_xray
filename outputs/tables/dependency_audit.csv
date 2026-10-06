@@ -1,0 +1,10 @@
+package,imported_by_project,installed_version,listed_in_requirements,direct_or_transitive,required_stage,notes
+Python standard library,TRUE,3.12.10 Stage2A venv,N/A,standard library,Stage 0 through Stage 2A,"csv/json/pathlib/statistics and other standard modules"
+torch,TRUE,2.14.1,TRUE,direct,Stage 2A training,"Imported by run_stage2a_training.py for device metadata; CPU build is installed"
+ultralytics,TRUE,8.4.158,TRUE,direct,Stage 2A training and evaluation,"YOLO training and inference implementation"
+polars[rtcompat],FALSE,1.44.2,TRUE,runtime compatibility,Stage 2A,"Required for Ultralytics result serialization on Pentium 4405U; not directly imported"
+torchvision,FALSE,0.29.1,FALSE,transitive,Stage 2A,"Installed as a torch/Ultralytics dependency; not directly imported by project source"
+numpy,FALSE,2.5.3,FALSE,transitive,Stage 2A,"Used internally by Ultralytics; not directly imported by project source"
+opencv-python,FALSE,5.0.0.93,FALSE,transitive,Stage 2A,"Used internally by Ultralytics; not directly imported by project source"
+Pillow,FALSE,12.3.0,FALSE,transitive,Stage 2A,"Used internally by Ultralytics; not directly imported by project source"
+PyYAML,FALSE,6.0.3,FALSE,transitive,Stage 2A,"Used internally by Ultralytics; not directly imported by project source"

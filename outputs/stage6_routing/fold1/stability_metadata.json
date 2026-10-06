@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "stage": "Stage 6 routing stability inference",
+  "run_name": "stage6_routing_stability_fold1",
+  "created_utc": "2026-10-05T12:57:48.595919+00:00",
+  "checkpoint": "/home/kampuser/KAMP제조대회/models/stage2a/kamp_conservative_640_fold1_e30_fullft_v1/weights/best.pt",
+  "fold": 1,
+  "transforms": [
+    "existing original prediction",
+    "horizontal_flip",
+    "scale_0.90_reflect_pad"
+  ],
+  "scale": 0.9,
+  "confidence_floor": 0.001,
+  "nms_iou": 0.7,
+  "candidate_count": 1077,
+  "gt_used_as_routing_signal": false
+}

@@ -1,0 +1,7 @@
+﻿feature,group_or_range,object_count,tp,fn,recall,fold_coverage,fold_ids,notes,definition
+interaction,small + low contrast,101,91,10,0.900990099009901,4,1|2|3|4,Exploratory quantile group; not an operational threshold.,Stage 1B pre-specified exploratory thresholds
+interaction,small + near image edge,104,99,5,0.9519230769230769,4,1|2|3|4,Exploratory quantile group; not an operational threshold.,Stage 1B pre-specified exploratory thresholds
+interaction,small + complex background,12,11,1,0.9166666666666666,4,1|2|3|4,Exploratory quantile group; not an operational threshold.,Stage 1B pre-specified exploratory thresholds
+interaction,low contrast + complex background,64,62,2,0.96875,4,1|2|3|4,Exploratory quantile group; not an operational threshold.,Stage 1B pre-specified exploratory thresholds
+interaction,low CNR + high heterogeneity,47,44,3,0.9361702127659575,4,1|2|3|4,Exploratory quantile group; not an operational threshold.,Stage 1B pre-specified exploratory thresholds
+interaction,near product edge + low contrast,64,62,2,0.96875,4,1|2|3|4,Exploratory quantile group; not an operational threshold.,Stage 1B pre-specified exploratory thresholds

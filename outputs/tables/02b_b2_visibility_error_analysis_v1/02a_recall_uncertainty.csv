@@ -1,0 +1,11 @@
+﻿subgroup,object_count,recall,ci_low,ci_high,confidence_level,bootstrap_unit,replicates,notes
+overall,1147,0.977332170880558,0.9678779160348159,0.9861649549435408,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+small,295,0.9593220338983051,0.9270825417933131,0.9844756330625896,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+low_contrast,307,0.9739413680781759,0.9504950495049505,0.9932449380818946,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+low_cnr,287,0.9686411149825784,0.9440777199528673,0.9897628275582807,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+small + low contrast,101,0.9306930693069307,0.8666666666666667,0.9883754343758353,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+small + near image edge,104,0.9615384615384616,0.9252278037383178,0.990990990990991,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+small + complex background,12,0.9166666666666666,0.7272727272727273,1.0,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+low contrast + complex background,64,0.96875,0.9193548387096773,1.0,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+low CNR + high heterogeneity,47,0.9574468085106383,0.8913043478260869,1.0,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.
+near product edge + low contrast,64,0.96875,0.9230769230769231,1.0,0.95,group,2000,Cluster bootstrap resamples frozen images or 10-second group components.

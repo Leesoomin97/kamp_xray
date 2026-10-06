@@ -1,0 +1,5 @@
+confidence_threshold,tp,fp,fn,precision,recall,f1,interpretation
+0.25,1121,51,26,0.9564846416382252,0.977332170880558,0.966796032772747,"Fixed development reporting threshold; not an operational safety threshold."
+0.40,1121,30,26,0.9739357080799305,0.977332170880558,0.9756309834638817,"Strong single-threshold development candidate: TP/FN/Recall unchanged from 0.25 while FP falls by 21 (41.2%)."
+0.45,1120,27,27,0.976460331299041,0.976460331299041,0.976460331299041,"Highest observed F1 in this listed sweep, but one additional FN; candidate DETECT boundary only."
+0.50,1115,27,32,0.9763572679509632,0.972101133391456,0.9742245522062035,"Higher threshold loses five additional TP versus 0.45 without reducing FP in the aggregated object-level sweep."

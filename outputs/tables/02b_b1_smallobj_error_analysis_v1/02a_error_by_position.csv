@@ -1,0 +1,17 @@
+﻿feature,group_or_range,object_count,tp,fn,recall,fold_coverage,fold_ids,notes
+bbox_center_x_norm,"Q1 (-inf,0.53955696]",288,280,8,0.9722222222222222,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_x_norm,"Q2 (0.53955696,0.58380682]",293,285,8,0.9726962457337884,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_x_norm,"Q3 (0.58380682,0.61631944]",283,277,6,0.9787985865724381,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_x_norm,"Q4 (0.61631944,inf)",283,272,11,0.9611307420494699,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_y_norm,"Q1 (-inf,0.43975904]",288,279,9,0.96875,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_y_norm,"Q2 (0.43975904,0.49849398]",286,278,8,0.972027972027972,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_y_norm,"Q3 (0.49849398,0.55630631]",287,280,7,0.975609756097561,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_center_y_norm,"Q4 (0.55630631,inf)",286,277,9,0.9685314685314685,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+image_edge_distance_px,"Q1 (-inf,127]",294,288,6,0.9795918367346939,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+image_edge_distance_px,"Q2 (127,143]",292,288,4,0.9863013698630136,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+image_edge_distance_px,"Q3 (143,159]",275,267,8,0.9709090909090909,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+image_edge_distance_px,"Q4 (159,inf)",286,271,15,0.9475524475524476,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+product_edge_distance_px,"Q1 (-inf,43.613332]",287,282,5,0.9825783972125436,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+product_edge_distance_px,"Q2 (43.613332,48.510308]",287,281,6,0.9790940766550522,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+product_edge_distance_px,"Q3 (48.510308,57.508695]",287,275,12,0.9581881533101045,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+product_edge_distance_px,"Q4 (57.508695,inf)",286,276,10,0.965034965034965,4,1|2|3|4,Exploratory quantile group; not an operational threshold.

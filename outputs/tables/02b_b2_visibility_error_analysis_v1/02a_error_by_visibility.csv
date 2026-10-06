@@ -1,0 +1,13 @@
+﻿feature,group_or_range,object_count,tp,fn,recall,fold_coverage,fold_ids,notes
+absolute_median_difference,"Q1 (-inf,4]",307,299,8,0.9739413680781759,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+absolute_median_difference,"Q2 (4,8]",335,332,3,0.991044776119403,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+absolute_median_difference,"Q3 (8,11.5]",219,216,3,0.9863013698630136,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+absolute_median_difference,"Q4 (11.5,inf)",286,274,12,0.958041958041958,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+signed_median_difference,"Q1 (-inf,-11.5]",296,284,12,0.9594594594594594,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+signed_median_difference,"Q2 (-11.5,-8]",281,278,3,0.9893238434163701,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+signed_median_difference,"Q3 (-8,-4]",320,317,3,0.990625,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+signed_median_difference,"Q4 (-4,inf)",250,242,8,0.968,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+cnr_like_robust,"Q1 (-inf,0.51797428]",287,278,9,0.9686411149825784,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+cnr_like_robust,"Q2 (0.51797428,0.82437753]",287,286,1,0.9965156794425087,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+cnr_like_robust,"Q3 (0.82437753,1.2140832]",287,282,5,0.9825783972125436,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+cnr_like_robust,"Q4 (1.2140832,inf)",286,275,11,0.9615384615384616,4,1|2|3|4,Exploratory quantile group; not an operational threshold.

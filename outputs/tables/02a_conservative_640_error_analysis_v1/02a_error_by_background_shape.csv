@@ -1,0 +1,17 @@
+﻿feature,group_or_range,object_count,tp,fn,recall,fold_coverage,fold_ids,notes
+bbox_aspect_ratio,"Q1 (-inf,0.85714286]",288,281,7,0.9756944444444444,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_aspect_ratio,"Q2 (0.85714286,1]",437,426,11,0.9748283752860412,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_aspect_ratio,"Q3 (1,1.1111111]",173,167,6,0.9653179190751445,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+bbox_aspect_ratio,"Q4 (1.1111111,inf)",249,238,11,0.9558232931726908,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+object_iqr,"Q1 (-inf,8]",296,291,5,0.9831081081081081,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+object_iqr,"Q2 (8,11]",338,327,11,0.9674556213017751,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+object_iqr,"Q3 (11,14.25]",238,228,10,0.957983193277311,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+object_iqr,"Q4 (14.25,inf)",275,266,9,0.9672727272727273,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_gradient_mean,"Q1 (-inf,3.1107232]",287,285,2,0.9930313588850174,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_gradient_mean,"Q2 (3.1107232,4.3536852]",287,272,15,0.9477351916376306,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_gradient_mean,"Q3 (4.3536852,5.3050633]",286,274,12,0.958041958041958,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_gradient_mean,"Q4 (5.3050633,inf)",287,281,6,0.9790940766550522,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_iqr,"Q1 (-inf,10.75]",291,288,3,0.9896907216494846,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_iqr,"Q2 (10.75,13]",286,276,10,0.965034965034965,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_iqr,"Q3 (13,19]",299,287,12,0.959866220735786,4,1|2|3|4,Exploratory quantile group; not an operational threshold.
+background_iqr,"Q4 (19,inf)",271,261,10,0.9630996309963099,4,1|2|3|4,Exploratory quantile group; not an operational threshold.

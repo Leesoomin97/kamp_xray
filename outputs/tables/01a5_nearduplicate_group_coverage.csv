@@ -1,0 +1,16 @@
+﻿threshold_seconds,stem_a,stem_b,time_gap_seconds,same_sequence_group,similarity_metric,similarity_value,notes
+3,002_20200623_163059(6),002_20200624_043128(1),43229,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.97265625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+3,002_20200624_162527(8),002_20200714_083106(2),1699539,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+3,002_20200624_203021(9),002_20200714_083106(2),1684845,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+6,002_20200623_163059(6),002_20200624_043128(1),43229,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.97265625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+6,002_20200624_162527(8),002_20200714_083106(2),1699539,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+6,002_20200624_203021(9),002_20200714_083106(2),1684845,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+10,002_20200623_163059(6),002_20200624_043128(1),43229,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.97265625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+10,002_20200624_162527(8),002_20200714_083106(2),1699539,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+10,002_20200624_203021(9),002_20200714_083106(2),1684845,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+30,002_20200623_163059(6),002_20200624_043128(1),43229,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.97265625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+30,002_20200624_162527(8),002_20200714_083106(2),1699539,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+30,002_20200624_203021(9),002_20200714_083106(2),1684845,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+60,002_20200623_163059(6),002_20200624_043128(1),43229,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.97265625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+60,002_20200624_162527(8),002_20200714_083106(2),1699539,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.
+60,002_20200624_203021(9),002_20200714_083106(2),1684845,FALSE,16x16 nearest-resize dHash; 256 bits; Hamming<=8,0.9765625,Temporal groups never cross machine/date; similarity pairs are not collapsed.

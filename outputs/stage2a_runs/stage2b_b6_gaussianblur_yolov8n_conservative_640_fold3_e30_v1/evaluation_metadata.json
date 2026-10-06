@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-02T17:23:17.040409+00:00",
+  "run_dir": "/home/kampuser/KAMP제조대회/models/stage2a/stage2b_b6_gaussianblur_yolov8n_conservative_640_fold3_e30_v1",
+  "model": "/home/kampuser/KAMP제조대회/models/stage2a/stage2b_b6_gaussianblur_yolov8n_conservative_640_fold3_e30_v1/weights/best.pt",
+  "representation": "conservative",
+  "fold": 3,
+  "imgsz": 640,
+  "confidence_floor": 0.001,
+  "report_confidence": 0.25,
+  "iou_match": 0.5,
+  "training_config": {
+    "epochs": 30,
+    "batch": 8,
+    "freeze": 0,
+    "seed": 42,
+    "workers": 2,
+    "model_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "model_architecture": "yolov8n",
+    "pretrained_weight_identifier": "Ultralytics COCO yolov8n.pt",
+    "augmentation_profile": "gaussian_blur",
+    "augmentation": {
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.05,
+      "scale": 0.2,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.5,
+      "mosaic": 0.5,
+      "mixup": 0.0,
+      "copy_paste": 0.0,
+      "gaussian_blur": {
+        "probability": 0.15,
+        "kernel_size": 3,
+        "sigma_min": 0.1,
+        "sigma_max": 0.5,
+        "application_scope": "training_images_only_after_resize",
+        "bbox_changed": false
+      }
+    }
+  },
+  "final_safety_threshold_selected": false
+}

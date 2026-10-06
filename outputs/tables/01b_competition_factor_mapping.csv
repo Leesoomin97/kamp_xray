@@ -1,0 +1,6 @@
+﻿competition_factor,available_directly,chosen_proxy,evidence,interpretation_limit,later_analysis
+이물질 크기,GT bbox geometry only,bbox_min_side_px; bbox_area_ratio,Official TXT converted to source-pixel geometry,BBox is not exact physical-object extent,Test Stage 2 error concentration across continuous size/rank groups
+이물질 위치,Image-relative GT position; analysis-only inferred product boundary,bbox center; image-edge distance; product-edge distance,Official TXT geometry plus Otsu-dark LCC full-scope success=100.0%,Image edge differs from product edge; inferred boundary has no physical boundary GT,Use both distances separately and sensitivity-check product-edge results
+이물질 형상,No physical shape,bbox aspect-ratio proxy,Official TXT rectangular extent,Cannot infer material geometry or 3D orientation,Treat as annotation-shape proxy
+이물질 밀도,FALSE,signed/absolute local intensity difference and CNR-like proxy,Artifact-excluded image intensity statistics,"Physical density, material, thickness, and attenuation coefficient are unavailable",Use only image-derived visibility proxies
+배경 제품과의 대비,Image-derived proxy,absolute/signed median contrast; robust CNR-like proxy,GT bbox versus 2.0× artifact-excluded local ring,"BBox and ring are proxy regions, not pure object/product masks",Test association with Stage 2 outcomes without causal claims

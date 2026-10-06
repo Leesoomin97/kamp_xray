@@ -1,0 +1,20 @@
+{
+  "detector_input_size": 640,
+  "projection_assumption": "aspect-ratio-preserving letterbox",
+  "binning": "empirical deciles with duplicate cut values collapsed",
+  "object_count": 1147,
+  "sharpest_adjacent_recall_increase": {
+    "lower_bin_id": 1,
+    "upper_bin_id": 2,
+    "candidate_boundary_projected_px": 11.338688085676036,
+    "lower_bin_range": "6.666666666666667..11.11111111111111",
+    "upper_bin_range": "11.566265060240964..12.727272727272727",
+    "lower_object_count": 123,
+    "upper_object_count": 147,
+    "lower_recall": 0.9186991869918699,
+    "upper_recall": 0.9727891156462585,
+    "recall_change_with_increasing_size": 0.05408992865438855,
+    "notes": "Adjacent empirical-bin contrast only; the largest change is a Stage 3 candidate, not a fixed threshold."
+  },
+  "stage3_use": "Candidate empirical detection-limit evidence only; no threshold selected."
+}

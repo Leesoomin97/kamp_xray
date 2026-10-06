@@ -1,0 +1,39 @@
+﻿group_feature,group_value,fp_count,images_with_fp,total_images,fp_per_image,notes
+machine,1호기(2020.09.22),9,9,156,0.057692307692307696,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+machine,2호기(2020.09.22),30,29,177,0.1694915254237288,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+machine,3호기(2020.09.22),44,39,167,0.2634730538922156,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200622,7,5,18,0.3888888888888889,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200623,25,24,108,0.23148148148148148,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200624,19,19,104,0.18269230769230768,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200625,6,6,30,0.2,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200629,11,9,34,0.3235294117647059,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200714,1,1,25,0.04,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200715,0,0,5,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200727,1,1,2,0.5,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200728,0,0,10,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200810,0,0,7,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200811,0,0,4,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200814,2,2,11,0.18181818181818182,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200815,0,0,2,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200818,0,0,7,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200819,5,4,9,0.5555555555555556,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200821,2,2,4,0.5,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200826,2,2,6,0.3333333333333333,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200831,1,1,7,0.14285714285714285,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200901,0,0,28,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200904,0,0,3,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200905,1,1,51,0.0196078431372549,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200906,0,0,12,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200907,0,0,11,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+date,20200922,0,0,2,0.0,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+resolution,316x332,30,29,209,0.14354066985645933,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+resolution,352x332,9,9,124,0.07258064516129033,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+resolution,576x444,44,39,167,0.2634730538922156,Descriptive only; machine/date/resolution are confounded and all 500 images contain GT objects.
+local_background_gradient_mean,FP_Q1,21,20,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_gradient_mean,FP_Q2,21,20,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_gradient_mean,FP_Q3,20,18,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_gradient_mean,FP_Q4,21,21,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_iqr,FP_Q1,23,23,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_iqr,FP_Q2,23,23,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_iqr,FP_Q3,19,19,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.
+local_background_iqr,FP_Q4,18,18,,,Exploratory distribution among FP predictions only; not an FP rate and no TN-image denominator exists.

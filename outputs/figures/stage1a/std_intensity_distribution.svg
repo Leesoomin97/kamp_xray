@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">Intensity standard deviation distribution</text>
+<line x1="75" y1="465" x2="865" y2="465" stroke="black"/>
+<line x1="75" y1="55" x2="75" y2="465" stroke="black"/>
+<rect x="75.00" y="405.66" width="25.33" height="59.34" fill="#4472c4"/>
+<rect x="101.33" y="373.29" width="25.33" height="91.71" fill="#4472c4"/>
+<rect x="127.67" y="443.42" width="25.33" height="21.58" fill="#4472c4"/>
+<rect x="154.00" y="233.03" width="25.33" height="231.97" fill="#4472c4"/>
+<rect x="180.33" y="92.76" width="25.33" height="372.24" fill="#4472c4"/>
+<rect x="206.67" y="389.47" width="25.33" height="75.53" fill="#4472c4"/>
+<rect x="233.00" y="276.18" width="25.33" height="188.82" fill="#4472c4"/>
+<rect x="259.33" y="340.92" width="25.33" height="124.08" fill="#4472c4"/>
+<rect x="285.67" y="448.82" width="25.33" height="16.18" fill="#4472c4"/>
+<rect x="312.00" y="454.21" width="25.33" height="10.79" fill="#4472c4"/>
+<rect x="338.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="364.67" y="421.84" width="25.33" height="43.16" fill="#4472c4"/>
+<rect x="391.00" y="400.26" width="25.33" height="64.74" fill="#4472c4"/>
+<rect x="417.33" y="108.95" width="25.33" height="356.05" fill="#4472c4"/>
+<rect x="443.67" y="421.84" width="25.33" height="43.16" fill="#4472c4"/>
+<rect x="470.00" y="421.84" width="25.33" height="43.16" fill="#4472c4"/>
+<rect x="496.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="522.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="549.00" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="575.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="601.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="628.00" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="654.33" y="454.21" width="25.33" height="10.79" fill="#4472c4"/>
+<rect x="680.67" y="362.50" width="25.33" height="102.50" fill="#4472c4"/>
+<rect x="707.00" y="313.95" width="25.33" height="151.05" fill="#4472c4"/>
+<rect x="733.33" y="346.32" width="25.33" height="118.68" fill="#4472c4"/>
+<rect x="759.67" y="448.82" width="25.33" height="16.18" fill="#4472c4"/>
+<rect x="786.00" y="438.03" width="25.33" height="26.97" fill="#4472c4"/>
+<rect x="812.33" y="55.00" width="25.33" height="410.00" fill="#4472c4"/>
+<rect x="838.67" y="346.32" width="25.33" height="118.68" fill="#4472c4"/>
+<text x="75" y="490" font-family="sans-serif" font-size="12">27.86</text>
+<text x="865" y="490" text-anchor="end" font-family="sans-serif" font-size="12">46.61</text>
+<text x="470.0" y="520" text-anchor="middle" font-family="sans-serif" font-size="14">palette-decoded luma std</text>
+<text x="18" y="260.0" transform="rotate(-90 18 260.0)" text-anchor="middle" font-family="sans-serif" font-size="14">count</text>
+</svg>

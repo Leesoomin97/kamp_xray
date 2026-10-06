@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-02T12:33:24.989301+00:00",
+  "run_dir": "/home/kampuser/KAMP제조대회/models/stage2a/kamp_conservative_640_fold1_e3_gpu_v1",
+  "model": "/home/kampuser/KAMP제조대회/models/stage2a/kamp_conservative_640_fold1_e3_gpu_v1/weights/best.pt",
+  "representation": "conservative",
+  "fold": 1,
+  "imgsz": 640,
+  "confidence_floor": 0.001,
+  "report_confidence": 0.25,
+  "iou_match": 0.5,
+  "training_config": {
+    "epochs": 3,
+    "batch": 8,
+    "freeze": 22,
+    "seed": 42,
+    "workers": 2,
+    "model_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36"
+  },
+  "final_safety_threshold_selected": false
+}

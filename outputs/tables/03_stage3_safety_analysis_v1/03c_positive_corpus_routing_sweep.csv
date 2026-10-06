@@ -1,0 +1,9 @@
+﻿detect_threshold,reinspect_threshold,total_positive_images,detect_images,reinspect_images,pass_images,unsafe_pass_rate_positive_corpus,reinspect_rate_positive_corpus,detect_rate_positive_corpus,limitation
+0.25,0.001,500,498,2,0,0.0,0.004,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.005,500,498,1,1,0.002,0.002,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.01,500,498,1,1,0.002,0.002,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.02,500,498,0,2,0.004,0.0,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.05,500,498,0,2,0.004,0.0,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.1,500,498,0,2,0.004,0.0,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.15,500,498,0,2,0.004,0.0,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."
+0.25,0.2,500,498,0,2,0.004,0.0,0.996,"All 500 development images contain GT objects. This does not estimate production specificity, normal-product PASS rate, or real reinspection workload."

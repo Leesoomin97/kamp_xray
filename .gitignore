@@ -211,6 +211,57 @@ tempCodeRunnerFile.py
 # PyPI configuration file
 .pypirc
 
+# KAMP project: raw dataset (read-only, never publish in source backup)
+dataset/
+**/dataset/
+4. X-ray 검사장비 AI 데이터셋/
+
+# KAMP project: model weights and exported runtimes
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# W&B local cache / credentials (CSV evidence exports are not ignored)
+wandb/
+.wandb/
+
+# Archives and transfer chunks
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.part_*
+*.part
+
+# Local environments and Python/notebook caches
+.venv/
+.venv*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local secrets and agent state
+.env*
+.aws/
+.codex/
+.agents/
+
+# Temporary/cache/runtime materialization
+.cache/
+tmp/
+temp/
+runs/
+outputs/cache/
+outputs/processed_data/
+
+# Download/extraction staging retained locally, not in the repository
+_kamp_stage2_backup_20261003/
+_stage2_metadata_final_20261003/
+stage6_results_only/
+stage6_m2_m5_results_sync/
+stage6_m6_results_sync/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/

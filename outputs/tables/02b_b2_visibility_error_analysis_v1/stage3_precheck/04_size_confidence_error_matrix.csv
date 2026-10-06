@@ -1,0 +1,8 @@
+﻿size_band_diag,confidence_band_diag,status,error_type,object_count
+< 11.34px,< 0.25,FN,LOW_CONFIDENCE,1
+< 11.34px,>= 0.25,FN,LOCALIZATION_FAILURE,9
+< 11.34px,>= 0.25,TP,MATCHED,113
+>= 11.34px,< 0.25,FN,LOW_CONFIDENCE,12
+>= 11.34px,< 0.25,FN,NO_DETECTION,2
+>= 11.34px,>= 0.25,FN,LOCALIZATION_FAILURE,2
+>= 11.34px,>= 0.25,TP,MATCHED,1008

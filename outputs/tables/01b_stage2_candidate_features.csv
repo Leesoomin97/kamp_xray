@@ -1,0 +1,9 @@
+﻿feature,concept,definition,reason_for_inclusion,limitations,artifact_sensitive,recommended_for_stage2
+bbox_min_side_px,size,Minimum GT bbox side in source pixels,Direct interpretable small-object representation proxy,BBox size is not physical object size,FALSE,TRUE
+bbox_center_x_norm; bbox_center_y_norm; image_edge_distance_norm,position,Normalized bbox center and distance to image boundary,Represents image position without claiming product edge,Image edge is not product edge,FALSE,TRUE
+bbox_aspect_ratio,bbox-shape proxy,GT bbox width/height,Compact annotation geometry descriptor,Not physical 3D shape,FALSE,TRUE
+absolute_median_difference; signed_median_difference,local contrast,BBox-versus-ring median difference,Robust separation with and without polarity,BBox contains background,TRUE; mitigated by exclusion mask,TRUE
+cnr_like_robust,image-derived CNR-like detectability,Absolute median difference divided by 1.4826×ring MAD+1e-6,Normalizes separation by local variation,Not physical detector CNR,TRUE; mitigated by exclusion mask,TRUE
+object_iqr,bbox-region heterogeneity,Artifact-excluded bbox p75-p25,"Robust, interpretable spread proxy",Not material heterogeneity,TRUE; mitigated by exclusion mask,TRUE
+background_gradient_mean; background_iqr,background complexity,Ring gradient mean and robust intensity spread,Separates spatial complexity from intensity spread,Image-derived product/background proxy,TRUE; mitigated by exclusion mask,TRUE
+product_edge_distance_px; product_edge_distance_norm,product-edge position,BBox-center distance to nearest Otsu-dark largest-component boundary,Diverse-sample methods agreed and the selected rule passed the full approved scope,Analysis-only inferred boundary; no physical boundary GT,TRUE; artifact pixels excluded during segmentation,TRUE

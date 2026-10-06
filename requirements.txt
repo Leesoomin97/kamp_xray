@@ -1,0 +1,8 @@
+# Direct runtime dependencies imported by the reproducible Stage 2A code.
+torch==2.14.1
+ultralytics==8.4.158
+
+# Required by Ultralytics result serialization on the current Pentium 4405U
+# CPU; the rtcompat build avoids an AVX compatibility failure.
+polars[rtcompat]==1.44.2
+pandas==3.0.6

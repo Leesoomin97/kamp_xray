@@ -1,0 +1,2 @@
+detect_threshold,reinspect_floor,detect_n,reinspect_n,pass_candidate_n,positive_set_capture,limitation
+0.45,0.25,499,1,0,1.0,"Development OOF simulation on 500 GT-positive images only; thresholds are candidates, and specificity, normal-product false alarms, PASS safety, and real reinspection workload are unvalidated."

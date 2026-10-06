@@ -1,0 +1,27 @@
+﻿feature,outcome,n,spearman,interpretation,limitation
+bbox_min_side_px,prediction_confidence,1147,-0.14176589312395702,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+bbox_min_side_px,iou,1147,0.03855391301371614,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+bbox_area_ratio,prediction_confidence,1147,0.4359036357425818,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+bbox_area_ratio,iou,1147,0.11036683591516626,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+bbox_center_x_norm,prediction_confidence,1147,-0.364186349711119,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+bbox_center_x_norm,iou,1147,-0.03970637796678088,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+bbox_center_y_norm,prediction_confidence,1147,0.07218881756093387,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+bbox_center_y_norm,iou,1147,0.004639571933152345,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+image_edge_distance_px,prediction_confidence,1147,-0.37578208842990796,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+image_edge_distance_px,iou,1147,-0.14017859710555328,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+product_edge_distance_px,prediction_confidence,1147,-0.3843715818083281,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+product_edge_distance_px,iou,1147,-0.15050863458685892,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+absolute_median_difference,prediction_confidence,1147,0.16808571354446566,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+absolute_median_difference,iou,1147,-0.007055512138982145,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+signed_median_difference,prediction_confidence,1147,-0.1703506850793584,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+signed_median_difference,iou,1147,0.002546920618989442,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+cnr_like_robust,prediction_confidence,1147,0.1515436513944269,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+cnr_like_robust,iou,1147,0.06655491795940394,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+bbox_aspect_ratio,prediction_confidence,1147,0.0055566493950676785,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+bbox_aspect_ratio,iou,1147,0.1228755837107398,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+object_iqr,prediction_confidence,1147,-0.079790760556188,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+object_iqr,iou,1147,0.036107488257366274,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+background_gradient_mean,prediction_confidence,1147,-0.31624812295772314,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+background_gradient_mean,iou,1147,0.00666979466704299,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.
+background_iqr,prediction_confidence,1147,0.1072742699203662,Descriptive monotonic association only; correlation does not imply causation.,Prediction confidence is absent for objects with no retained prediction.
+background_iqr,iou,1147,-0.18283283321493507,Descriptive monotonic association only; correlation does not imply causation.,IoU includes unmatched/best-candidate localization diagnostics.

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">6s 4-fold: background_gradient_mean</text>
+<line x1="185.00" y1="417.26" x2="185.00" y2="55.00" stroke="black"/>
+<rect x="137.50" y="215.34" width="95.00" height="142.73" fill="#c6d9f1" stroke="#4472c4"/>
+<line x1="137.50" y1="288.05" x2="232.50" y2="288.05" stroke="#c00000" stroke-width="2"/>
+<text x="185.00" y="465" text-anchor="middle" font-family="sans-serif" font-size="10">F1</text>
+<line x1="375.00" y1="429.88" x2="375.00" y2="80.06" stroke="black"/>
+<rect x="327.50" y="212.08" width="95.00" height="138.43" fill="#c6d9f1" stroke="#4472c4"/>
+<line x1="327.50" y1="269.90" x2="422.50" y2="269.90" stroke="#c00000" stroke-width="2"/>
+<text x="375.00" y="465" text-anchor="middle" font-family="sans-serif" font-size="10">F2</text>
+<line x1="565.00" y1="445.00" x2="565.00" y2="86.27" stroke="black"/>
+<rect x="517.50" y="209.56" width="95.00" height="143.67" fill="#c6d9f1" stroke="#4472c4"/>
+<line x1="517.50" y1="273.78" x2="612.50" y2="273.78" stroke="#c00000" stroke-width="2"/>
+<text x="565.00" y="465" text-anchor="middle" font-family="sans-serif" font-size="10">F3</text>
+<line x1="755.00" y1="427.36" x2="755.00" y2="66.71" stroke="black"/>
+<rect x="707.50" y="215.32" width="95.00" height="134.16" fill="#c6d9f1" stroke="#4472c4"/>
+<line x1="707.50" y1="270.15" x2="802.50" y2="270.15" stroke="#c00000" stroke-width="2"/>
+<text x="755.00" y="465" text-anchor="middle" font-family="sans-serif" font-size="10">F4</text>
+<line x1="90" y1="445" x2="850" y2="445" stroke="black"/>
+<text x="18" y="250.0" transform="rotate(-90 18 250.0)" text-anchor="middle" font-family="sans-serif" font-size="14">background_gradient_mean</text>
+</svg>
