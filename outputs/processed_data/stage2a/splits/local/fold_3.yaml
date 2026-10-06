@@ -1,0 +1,5 @@
+train: D:/KAMP제조대회/outputs/processed_data/stage2a/splits/local/fold_3_train.txt
+val: D:/KAMP제조대회/outputs/processed_data/stage2a/splits/local/fold_3_val.txt
+nc: 1
+names:
+  0: foreign_object

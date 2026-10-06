@@ -1,0 +1,9 @@
+﻿check,expected,observed,status,notes
+eligible samples,500,500,OK,Approved Stage 1 scope only.
+GT objects,1147,1147,OK,Approved Stage 1 scope only.
+Stage 1A/1B object key match,1147,1147,OK,Approved Stage 1 scope only.
+6s assignments,500,500,OK,Approved Stage 1 scope only.
+10s assignments,500,500,OK,Approved Stage 1 scope only.
+metadata rows,500,500,OK,Approved Stage 1 scope only.
+xray objects with product edge,1147,1147,OK,Approved Stage 1 scope only.
+required xray features complete,12617,12617,OK,Approved Stage 1 scope only.

@@ -1,0 +1,39 @@
+{
+  "representation": "conservative",
+  "imgsz": 640,
+  "fold_result_directories": [
+    "/home/kampuser/KAMP제조대회/outputs/stage2a_runs/stage2b_b1_smallobj_yolov8n_conservative_640_fold1_e30_v1",
+    "/home/kampuser/KAMP제조대회/outputs/stage2a_runs/stage2b_b1_smallobj_yolov8n_conservative_640_fold2_e30_v1",
+    "/home/kampuser/KAMP제조대회/outputs/stage2a_runs/stage2b_b1_smallobj_yolov8n_conservative_640_fold3_e30_v1",
+    "/home/kampuser/KAMP제조대회/outputs/stage2a_runs/stage2b_b1_smallobj_yolov8n_conservative_640_fold4_e30_v1"
+  ],
+  "training_config": {
+    "epochs": 30,
+    "batch": 8,
+    "freeze": 0,
+    "seed": 42,
+    "workers": 2,
+    "model_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "model_architecture": "yolov8n",
+    "pretrained_weight_identifier": "Ultralytics COCO yolov8n.pt",
+    "augmentation_profile": "small_object",
+    "augmentation": {
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "degrees": 0.0,
+      "translate": 0.05,
+      "scale": 0.2,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.5,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "copy_paste": 0.0
+    }
+  },
+  "frozen_fold_sha256": "963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8",
+  "coverage": "500 frozen samples exactly once",
+  "model_performance_used_to_change_folds": false
+}

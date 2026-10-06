@@ -1,0 +1,5 @@
+train: /home/kampuser/KAMP제조대회/outputs/cache/stage2a_runtime_splits/conservative/fold_2_train.txt
+val: /home/kampuser/KAMP제조대회/outputs/cache/stage2a_runtime_splits/conservative/fold_2_val.txt
+nc: 1
+names:
+  0: foreign_object

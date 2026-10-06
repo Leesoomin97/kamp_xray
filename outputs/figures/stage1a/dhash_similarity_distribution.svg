@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">All-pairs dHash similarity</text>
+<line x1="75" y1="465" x2="865" y2="465" stroke="black"/>
+<line x1="75" y1="55" x2="75" y2="465" stroke="black"/>
+<rect x="75.00" y="464.92" width="18.75" height="0.08" fill="#4472c4"/>
+<rect x="94.75" y="464.79" width="18.75" height="0.21" fill="#4472c4"/>
+<rect x="114.50" y="463.82" width="18.75" height="1.18" fill="#4472c4"/>
+<rect x="134.25" y="462.21" width="18.75" height="2.79" fill="#4472c4"/>
+<rect x="154.00" y="459.38" width="18.75" height="5.62" fill="#4472c4"/>
+<rect x="173.75" y="454.23" width="18.75" height="10.77" fill="#4472c4"/>
+<rect x="193.50" y="446.12" width="18.75" height="18.88" fill="#4472c4"/>
+<rect x="213.25" y="435.56" width="18.75" height="29.44" fill="#4472c4"/>
+<rect x="233.00" y="418.36" width="18.75" height="46.64" fill="#4472c4"/>
+<rect x="252.75" y="421.79" width="18.75" height="43.21" fill="#4472c4"/>
+<rect x="272.50" y="377.69" width="18.75" height="87.31" fill="#4472c4"/>
+<rect x="292.25" y="354.24" width="18.75" height="110.76" fill="#4472c4"/>
+<rect x="312.00" y="325.94" width="18.75" height="139.06" fill="#4472c4"/>
+<rect x="331.75" y="295.31" width="18.75" height="169.69" fill="#4472c4"/>
+<rect x="351.50" y="266.76" width="18.75" height="198.24" fill="#4472c4"/>
+<rect x="371.25" y="232.29" width="18.75" height="232.71" fill="#4472c4"/>
+<rect x="391.00" y="185.70" width="18.75" height="279.30" fill="#4472c4"/>
+<rect x="410.75" y="145.27" width="18.75" height="319.73" fill="#4472c4"/>
+<rect x="430.50" y="110.97" width="18.75" height="354.03" fill="#4472c4"/>
+<rect x="450.25" y="217.72" width="18.75" height="247.28" fill="#4472c4"/>
+<rect x="470.00" y="65.39" width="18.75" height="399.61" fill="#4472c4"/>
+<rect x="489.75" y="55.00" width="18.75" height="410.00" fill="#4472c4"/>
+<rect x="509.50" y="68.26" width="18.75" height="396.74" fill="#4472c4"/>
+<rect x="529.25" y="88.37" width="18.75" height="376.63" fill="#4472c4"/>
+<rect x="549.00" y="134.20" width="18.75" height="330.80" fill="#4472c4"/>
+<rect x="568.75" y="200.10" width="18.75" height="264.90" fill="#4472c4"/>
+<rect x="588.50" y="263.89" width="18.75" height="201.11" fill="#4472c4"/>
+<rect x="608.25" y="321.63" width="18.75" height="143.37" fill="#4472c4"/>
+<rect x="628.00" y="363.79" width="18.75" height="101.21" fill="#4472c4"/>
+<rect x="647.75" y="412.24" width="18.75" height="52.76" fill="#4472c4"/>
+<rect x="667.50" y="393.02" width="18.75" height="71.98" fill="#4472c4"/>
+<rect x="687.25" y="398.22" width="18.75" height="66.78" fill="#4472c4"/>
+<rect x="707.00" y="404.76" width="18.75" height="60.24" fill="#4472c4"/>
+<rect x="726.75" y="419.38" width="18.75" height="45.62" fill="#4472c4"/>
+<rect x="746.50" y="438.73" width="18.75" height="26.27" fill="#4472c4"/>
+<rect x="766.25" y="450.81" width="18.75" height="14.19" fill="#4472c4"/>
+<rect x="786.00" y="458.24" width="18.75" height="6.76" fill="#4472c4"/>
+<rect x="805.75" y="462.76" width="18.75" height="2.24" fill="#4472c4"/>
+<rect x="825.50" y="463.61" width="18.75" height="1.39" fill="#4472c4"/>
+<rect x="845.25" y="464.87" width="18.75" height="0.13" fill="#4472c4"/>
+<text x="75" y="490" font-family="sans-serif" font-size="12">0.5234</text>
+<text x="865" y="490" text-anchor="end" font-family="sans-serif" font-size="12">0.9766</text>
+<text x="470.0" y="520" text-anchor="middle" font-family="sans-serif" font-size="14">1 - Hamming/256</text>
+<text x="18" y="260.0" transform="rotate(-90 18 260.0)" text-anchor="middle" font-family="sans-serif" font-size="14">count</text>
+</svg>

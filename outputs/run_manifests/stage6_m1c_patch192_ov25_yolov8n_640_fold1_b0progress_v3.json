@@ -1,0 +1,9 @@
+{
+  "status": "EVALUATION_FAILED",
+  "stage": "Stage 6 evaluation",
+  "run_name": "stage6_m1c_patch192_ov25_yolov8n_640_fold1_b0progress_v3",
+  "project_root": "/home/kampuser/KAMP제조대회",
+  "evaluation_ended_utc": "2026-10-05T11:18:01.691984+00:00",
+  "evaluation_error_type": "FileExistsError",
+  "evaluation_error": "Evaluation output directory is not empty: /home/kampuser/KAMP제조대회/outputs/stage6_runs/stage6_m1c_patch192_ov25_yolov8n_640_fold1_b0progress_v3"
+}

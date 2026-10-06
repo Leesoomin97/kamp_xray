@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">GT image-edge-distance distribution</text>
+<line x1="75" y1="465" x2="865" y2="465" stroke="black"/>
+<line x1="75" y1="55" x2="75" y2="465" stroke="black"/>
+<rect x="75.00" y="440.30" width="25.33" height="24.70" fill="#4472c4"/>
+<rect x="101.33" y="341.51" width="25.33" height="123.49" fill="#4472c4"/>
+<rect x="127.67" y="366.20" width="25.33" height="98.80" fill="#4472c4"/>
+<rect x="154.00" y="440.30" width="25.33" height="24.70" fill="#4472c4"/>
+<rect x="180.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="206.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="233.00" y="457.59" width="25.33" height="7.41" fill="#4472c4"/>
+<rect x="259.33" y="445.24" width="25.33" height="19.76" fill="#4472c4"/>
+<rect x="285.67" y="447.71" width="25.33" height="17.29" fill="#4472c4"/>
+<rect x="312.00" y="440.30" width="25.33" height="24.70" fill="#4472c4"/>
+<rect x="338.33" y="430.42" width="25.33" height="34.58" fill="#4472c4"/>
+<rect x="364.67" y="400.78" width="25.33" height="64.22" fill="#4472c4"/>
+<rect x="391.00" y="324.22" width="25.33" height="140.78" fill="#4472c4"/>
+<rect x="417.33" y="294.58" width="25.33" height="170.42" fill="#4472c4"/>
+<rect x="443.67" y="287.17" width="25.33" height="177.83" fill="#4472c4"/>
+<rect x="470.00" y="252.59" width="25.33" height="212.41" fill="#4472c4"/>
+<rect x="496.33" y="55.00" width="25.33" height="410.00" fill="#4472c4"/>
+<rect x="522.67" y="163.67" width="25.33" height="301.33" fill="#4472c4"/>
+<rect x="549.00" y="235.30" width="25.33" height="229.70" fill="#4472c4"/>
+<rect x="575.33" y="413.13" width="25.33" height="51.87" fill="#4472c4"/>
+<rect x="601.67" y="418.07" width="25.33" height="46.93" fill="#4472c4"/>
+<rect x="628.00" y="418.07" width="25.33" height="46.93" fill="#4472c4"/>
+<rect x="654.33" y="420.54" width="25.33" height="44.46" fill="#4472c4"/>
+<rect x="680.67" y="410.66" width="25.33" height="54.34" fill="#4472c4"/>
+<rect x="707.00" y="383.49" width="25.33" height="81.51" fill="#4472c4"/>
+<rect x="733.33" y="376.08" width="25.33" height="88.92" fill="#4472c4"/>
+<rect x="759.67" y="363.73" width="25.33" height="101.27" fill="#4472c4"/>
+<rect x="786.00" y="341.51" width="25.33" height="123.49" fill="#4472c4"/>
+<rect x="812.33" y="403.25" width="25.33" height="61.75" fill="#4472c4"/>
+<rect x="838.67" y="415.60" width="25.33" height="49.40" fill="#4472c4"/>
+<text x="75" y="490" font-family="sans-serif" font-size="12">52</text>
+<text x="865" y="490" text-anchor="end" font-family="sans-serif" font-size="12">215</text>
+<text x="470.0" y="520" text-anchor="middle" font-family="sans-serif" font-size="14">pixels</text>
+<text x="18" y="260.0" transform="rotate(-90 18 260.0)" text-anchor="middle" font-family="sans-serif" font-size="14">count</text>
+</svg>

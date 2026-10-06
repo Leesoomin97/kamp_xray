@@ -1,0 +1,60 @@
+﻿feature,group_or_range,sample_count,object_count,proportion,notes
+machine,1호기(2020.09.22),156,404,0.312,Observed categorical frequency.
+machine,2호기(2020.09.22),177,376,0.354,Observed categorical frequency.
+machine,3호기(2020.09.22),167,367,0.334,Observed categorical frequency.
+date,20200622,18,54,0.036,Observed categorical frequency.
+date,20200623,108,323,0.216,Observed categorical frequency.
+date,20200624,104,312,0.208,Observed categorical frequency.
+date,20200625,30,90,0.06,Observed categorical frequency.
+date,20200629,34,102,0.068,Observed categorical frequency.
+date,20200714,25,75,0.05,Observed categorical frequency.
+date,20200715,5,15,0.01,Observed categorical frequency.
+date,20200727,2,2,0.004,Observed categorical frequency.
+date,20200728,10,10,0.02,Observed categorical frequency.
+date,20200810,7,7,0.014,Observed categorical frequency.
+date,20200811,4,4,0.008,Observed categorical frequency.
+date,20200814,11,11,0.022,Observed categorical frequency.
+date,20200815,2,2,0.004,Observed categorical frequency.
+date,20200818,7,7,0.014,Observed categorical frequency.
+date,20200819,9,9,0.018,Observed categorical frequency.
+date,20200821,4,4,0.008,Observed categorical frequency.
+date,20200826,6,6,0.012,Observed categorical frequency.
+date,20200831,7,7,0.014,Observed categorical frequency.
+date,20200901,28,28,0.056,Observed categorical frequency.
+date,20200904,3,3,0.006,Observed categorical frequency.
+date,20200905,51,51,0.102,Observed categorical frequency.
+date,20200906,12,12,0.024,Observed categorical frequency.
+date,20200907,11,11,0.022,Observed categorical frequency.
+date,20200922,2,2,0.004,Observed categorical frequency.
+SN,SN12053,167,367,0.334,Observed categorical frequency.
+SN,SN77127,177,376,0.354,Observed categorical frequency.
+SN,SN77128,156,404,0.312,Observed categorical frequency.
+object_count,1,176,176,0.352,Observed categorical frequency.
+object_count,2,1,2,0.002,Observed categorical frequency.
+object_count,3,323,969,0.646,Observed categorical frequency.
+class_id,0,500,1147,1.0,Object-level class frequency.
+bbox_area_ratio,"Q1: [0.00018768769, 0.00054764513]",500,233,0.2031386224934612,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_area_ratio,"Q2: [0.00054764513, 0.00069311336]",500,246,0.21447253705318223,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_area_ratio,"Q3: [0.00069311336, 0.00084713855]",500,212,0.18482999128160418,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_area_ratio,"Q4: [0.00084713855, 0.0010268346]",500,231,0.2013949433304272,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_area_ratio,"Q5: [0.0010268346, 0.0022876315]",500,225,0.1961639058413252,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_x_norm,"Q1: [0.46518987, 0.51772152]",500,230,0.2005231037489102,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_x_norm,"Q2: [0.51772152, 0.57102273]",500,234,0.2040104620749782,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_x_norm,"Q3: [0.57102273, 0.60078914]",500,224,0.1952920662598082,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_x_norm,"Q4: [0.60078914, 0.62136995]",500,229,0.1996512641673932,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_x_norm,"Q5: [0.62136995, 0.8359375]",500,230,0.2005231037489102,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_y_norm,"Q1: [0.25675676, 0.42940953]",500,230,0.2005231037489102,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_y_norm,"Q2: [0.42940953, 0.46837349]",500,226,0.1970357454228422,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_y_norm,"Q3: [0.46837349, 0.52027027]",500,235,0.2048823016564952,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_y_norm,"Q4: [0.52027027, 0.57801205]",500,226,0.1970357454228422,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_center_y_norm,"Q5: [0.57801205, 0.77560241]",500,230,0.2005231037489102,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_aspect_ratio_proxy,"Q1: [0.53846154, 0.81818182]",500,246,0.21447253705318223,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_aspect_ratio_proxy,"Q2: [0.81818182, 0.91666667]",500,234,0.2040104620749782,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_aspect_ratio_proxy,"Q3: [0.91666667, 1]",500,245,0.2136006974716652,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_aspect_ratio_proxy,"Q4: [1, 1.125]",500,193,0.16826503923278116,Exploratory equal-frequency quantile bin; not an operational threshold.
+bbox_aspect_ratio_proxy,"Q5: [1.125, 1.8333333]",500,229,0.1996512641673932,Exploratory equal-frequency quantile bin; not an operational threshold.
+image_edge_distance_norm,"Q1: [0.16455696, 0.35240964]",500,233,0.2031386224934612,Exploratory equal-frequency quantile bin; not an operational threshold.
+image_edge_distance_norm,"Q2: [0.35240964, 0.39759036]",500,235,0.2048823016564952,Exploratory equal-frequency quantile bin; not an operational threshold.
+image_edge_distance_norm,"Q3: [0.39759036, 0.42792793]",500,227,0.1979075850043592,Exploratory equal-frequency quantile bin; not an operational threshold.
+image_edge_distance_norm,"Q4: [0.42792793, 0.45253165]",500,223,0.1944202266782912,Exploratory equal-frequency quantile bin; not an operational threshold.
+image_edge_distance_norm,"Q5: [0.45253165, 0.48423423]",500,229,0.1996512641673932,Exploratory equal-frequency quantile bin; not an operational threshold.

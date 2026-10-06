@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "stage": "Stage 6 preprocessing dataset preparation",
+  "run_name": "stage6_preprocessing_dataset_preparation",
+  "methods": [
+    "bilateral",
+    "clahe",
+    "bilateral_clahe",
+    "clahe_bilateral"
+  ],
+  "source_sample_count": 500,
+  "derived_image_count": 2000,
+  "generated_metric_paths": [
+    "/home/kampuser/KAMP제조대회/outputs/tables/06_preprocessing_manifest.csv"
+  ]
+}

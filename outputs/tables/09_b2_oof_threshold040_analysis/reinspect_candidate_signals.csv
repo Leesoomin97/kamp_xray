@@ -1,0 +1,6 @@
+signal,observed_FN_n,interpretation
+low_or_unstable_confidence,15,0.40 미만 confidence에서 남은 미탐 후보
+localization_instability,11,confidence는 유지되지만 IoU<0.50인 위치 불안정
+small_predicted_or_GT_object,12,bbox min side <= 8px인 작은 객체
+low_visibility,8,absolute median contrast <= 4인 저대비 객체
+small_plus_low_visibility,7,small + low contrast 동시 조건

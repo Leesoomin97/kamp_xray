@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "stage": "Stage 6 patch dataset preparation",
+  "run_name": "stage6_m1_patch256_dataset_preparation",
+  "patch_size": 256,
+  "overlap_fraction": 0.25,
+  "stride": 192,
+  "label_policy": "ALL_POSITIVE_AREA_INTERSECTIONS_CLIPPED",
+  "processing_version": "stage6_m1_patch256_controlled_v1",
+  "candidate_patch_count": 2334,
+  "materialized_patch_count": 2334,
+  "positive_patch_count": 1934,
+  "true_background_patch_count": 400,
+  "source_sample_count": 500,
+  "source_gt_count": 1147,
+  "unlabeled_fragment_patch_count": 0,
+  "coordinate_error_count": 0,
+  "source_fold_inheritance_error_count": 0,
+  "generated_metric_paths": [
+    "/home/kampuser/KAMP제조대회/outputs/tables/06_patch256_manifest.csv"
+  ]
+}

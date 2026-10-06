@@ -1,0 +1,6 @@
+﻿finding,evidence,risk,control_method,remaining_limitation,reporting_use
+Colored artifact is universal,500/500 approved BMPs contain strong chromatic pixels,Direct color shortcut,Strong chromatic range>=200 mask,Deployment artifact status unknown,Data leakage risk
+Artifact closely aligns with GT,Stage 1B: 1124/1147 objects within 3px; component count matches 493/500 images,GT location/count inference from marks,Repair only detected line pixels,True signal under overwritten colored pixels is unavailable,Why raw input is invalid
+Direct grayscale retains residual structure,Mean artifact-edge recall=0.0227,Color removal alone does not remove rectangular intensity/edge signal,Local reconstruction required,Fixed diagnostic is not an exhaustive attacker,Reject grayscale-only baseline
+Preferred artifact control selected pre-model,ARTIFACT_INPAINT_CONSERVATIVE,Repair can alter small/local signal,ARTIFACT_INPAINT_CONSERVATIVE,No detector performance used; true latent pixels cannot be recovered,Baseline input specification
+Nonartifact pixels preserved,Preferred max outside-mask change=0.0,Unnecessary X-ray modification,Strict mask-only write,Gradients adjacent to repaired pixels can change,Signal-preservation evidence

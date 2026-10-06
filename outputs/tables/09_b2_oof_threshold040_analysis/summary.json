@@ -1,0 +1,11 @@
+{
+  "confidence_candidate": 0.4,
+  "iou_threshold": 0.5,
+  "fn_count": 26,
+  "fp_removed_025_to_040": 21,
+  "fp_remaining_at_040": 30,
+  "small_fn": 12,
+  "low_contrast_fn": 8,
+  "small_low_fn": 7,
+  "note": "0.40 is a development OOF candidate, not a validated operational safety threshold."
+}

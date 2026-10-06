@@ -1,0 +1,9 @@
+﻿feature,feature_family,definition,interpretation,limitations,redundancy_notes,recommended_for_stage2
+absolute_median_difference,local contrast,|bbox median - ring median|,Polarity-invariant local intensity separation,BBox is a proxy region and contains background,Preferred over highly related absolute mean difference for robustness,TRUE
+signed_median_difference,local contrast,bbox median - ring median,Retains X-ray intensity polarity,Not physical density or attenuation coefficient,Complements absolute contrast,TRUE
+cnr_like_robust,CNR-like,|median difference|/(1.4826×background MAD+1e-6),Image-derived separation relative to robust local variation,Not a calibrated physical detector CNR,Preferred over mean/std version for robustness,TRUE
+object_iqr,bbox heterogeneity,bbox-region p75-p25 after artifact exclusion,Robust bbox-region signal spread,Includes background and does not measure material heterogeneity,Preferred compact spread proxy; entropy retained as diagnostic,TRUE
+object_entropy,bbox heterogeneity,Shannon entropy of rounded bbox-region luma,Distributional diversity in bbox proxy,Sensitive to quantization and region size,Diagnostic alternative to IQR,FALSE
+background_gradient_mean,background complexity,Mean central-difference gradient magnitude in selected ring,Local structural variation proxy,Affected by acquisition noise and product texture,Preferred spatial-complexity measure,TRUE
+background_iqr,background complexity,Background-ring p75-p25,Robust local intensity spread,Does not encode spatial arrangement,Complements gradient mean,TRUE
+background_entropy,background complexity,Shannon entropy of rounded ring luma,Background distribution diversity,Redundant with spread/noise measures and region size sensitive,Retain as diagnostic only,FALSE

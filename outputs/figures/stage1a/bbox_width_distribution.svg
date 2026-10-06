@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">GT bbox width distribution</text>
+<line x1="75" y1="465" x2="865" y2="465" stroke="black"/>
+<line x1="75" y1="55" x2="75" y2="465" stroke="black"/>
+<rect x="75.00" y="462.97" width="25.33" height="2.03" fill="#4472c4"/>
+<rect x="101.33" y="426.44" width="25.33" height="38.56" fill="#4472c4"/>
+<rect x="127.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="154.00" y="329.01" width="25.33" height="135.99" fill="#4472c4"/>
+<rect x="180.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="206.67" y="188.96" width="25.33" height="276.04" fill="#4472c4"/>
+<rect x="233.00" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="259.33" y="69.21" width="25.33" height="395.79" fill="#4472c4"/>
+<rect x="285.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="312.00" y="55.00" width="25.33" height="410.00" fill="#4472c4"/>
+<rect x="338.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="364.67" y="75.30" width="25.33" height="389.70" fill="#4472c4"/>
+<rect x="391.00" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="417.33" y="243.76" width="25.33" height="221.24" fill="#4472c4"/>
+<rect x="443.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="470.00" y="296.53" width="25.33" height="168.47" fill="#4472c4"/>
+<rect x="496.33" y="329.01" width="25.33" height="135.99" fill="#4472c4"/>
+<rect x="522.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="549.00" y="391.93" width="25.33" height="73.07" fill="#4472c4"/>
+<rect x="575.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="601.67" y="416.29" width="25.33" height="48.71" fill="#4472c4"/>
+<rect x="628.00" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="654.33" y="446.73" width="25.33" height="18.27" fill="#4472c4"/>
+<rect x="680.67" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="707.00" y="458.91" width="25.33" height="6.09" fill="#4472c4"/>
+<rect x="733.33" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="759.67" y="462.97" width="25.33" height="2.03" fill="#4472c4"/>
+<rect x="786.00" y="465.00" width="25.33" height="0.00" fill="#4472c4"/>
+<rect x="812.33" y="460.94" width="25.33" height="4.06" fill="#4472c4"/>
+<rect x="838.67" y="462.97" width="25.33" height="2.03" fill="#4472c4"/>
+<text x="75" y="490" font-family="sans-serif" font-size="12">5</text>
+<text x="865" y="490" text-anchor="end" font-family="sans-serif" font-size="12">21</text>
+<text x="470.0" y="520" text-anchor="middle" font-family="sans-serif" font-size="14">pixels</text>
+<text x="18" y="260.0" transform="rotate(-90 18 260.0)" text-anchor="middle" font-family="sans-serif" font-size="14">count</text>
+</svg>
