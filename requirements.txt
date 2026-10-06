@@ -1,8 +1,17 @@
-# Direct runtime dependencies imported by the reproducible Stage 2A code.
+# Direct dependencies imported by the reproducible training, evaluation, and
+# analysis code. PyTorch accelerator builds may require the platform-specific
+# index documented at https://pytorch.org/get-started/locally/.
 torch==2.14.1
 ultralytics==8.4.158
+numpy==2.5.3
+pandas==3.0.6
+opencv-python==5.0.0.93
+matplotlib==3.11.2
 
 # Required by Ultralytics result serialization on the current Pentium 4405U
 # CPU; the rtcompat build avoids an AVX compatibility failure.
 polars[rtcompat]==1.44.2
-pandas==3.0.6
+
+# Optional training-time experiment tracking. Training and inference use lazy
+# imports and remain functional when W&B logging is disabled.
+wandb==0.30.0

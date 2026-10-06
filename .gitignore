@@ -233,6 +233,7 @@ wandb/
 *.tar.gz
 *.part_*
 *.part
+*.part.*
 
 # Local environments and Python/notebook caches
 .venv/
@@ -261,6 +262,12 @@ _stage2_metadata_final_20261003/
 stage6_results_only/
 stage6_m2_m5_results_sync/
 stage6_m6_results_sync/
+
+# Final detector checkpoints are verified and archived outside Git.
+final_b2_weights_backup/
+
+# Local document filename-encoding collision copies are not source artifacts.
+*.hwpx.hwp
 
 # Marimo
 marimo/_static/
