@@ -36,8 +36,6 @@ Reporting confidence 0.25, GT matching IoU 0.50의 고정 4-fold development OOF
 - `metadata/`: 최종 B2 설정과 재현 범위 metadata
 - `outputs/tables/`: CSV/JSON evidence
 - `outputs/eda/`: 분석 및 의사결정 문서
-- `outputs/run_manifests/`: 실행 이력과 provenance manifest
-- `metadata/`와 `outputs/`: portable config, 집계 metric 및 분석 evidence를 보존
 
 ## 검증 환경
 
