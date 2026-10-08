@@ -1,0 +1,38 @@
+{
+    "model":  "YOLOv8n",
+    "final_experiment":  "B2-640",
+    "representation":  "conservative",
+    "imgsz":  640,
+    "augmentation_profile":  "visibility",
+    "seed":  42,
+    "folds":  {
+                  "1":  {
+                            "source_run":  "stage2b_b2_visibility_yolov8n_conservative_640_fold1_e30_v1",
+                            "source_path":  "models/b2_640/fold1/weights/best.pt",
+                            "backup_filename":  "best.pt",
+                            "size_bytes":  6262948,
+                            "sha256":  "fa043d99a73ec27a1c634eadead4b1cf288f1a4173612b412d5e383704f0243b"
+                        },
+                  "2":  {
+                            "source_run":  "stage2b_b2_visibility_yolov8n_conservative_640_fold2_e30_v1",
+                            "source_path":  "models/b2_640/fold2/weights/best.pt",
+                            "backup_filename":  "best.pt",
+                            "size_bytes":  6262948,
+                            "sha256":  "df208b5cd4551a2fe43d997cb9c6d046b12358e87bc303647fa053ae00482163"
+                        },
+                  "3":  {
+                            "source_run":  "stage2b_b2_visibility_yolov8n_conservative_640_fold3_e30_v1",
+                            "source_path":  "models/b2_640/fold3/weights/best.pt",
+                            "backup_filename":  "best.pt",
+                            "size_bytes":  6262948,
+                            "sha256":  "aa86a3ce817f904ddd202dea9f2904d8a035726590baf4ed2d23054f825dbc3f"
+                        },
+                  "4":  {
+                            "source_run":  "stage2b_b2_visibility_yolov8n_conservative_640_fold4_e30_v1",
+                            "source_path":  "models/b2_640/fold4/weights/best.pt",
+                            "backup_filename":  "best.pt",
+                            "size_bytes":  6262948,
+                            "sha256":  "09cc1aeb6745b9d983688be10ffcd895d2aae44cf7e7380b8d1011f9fffc56d8"
+                        }
+              }
+}

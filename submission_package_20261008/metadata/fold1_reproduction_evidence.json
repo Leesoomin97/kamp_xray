@@ -1,0 +1,25 @@
+{
+  "scope": "same KAMP environment, same frozen Fold 1, seed, and B2-640 recipe",
+  "not_claimed": ["four-fold retraining reproduction", "cross-hardware bitwise reproduction"],
+  "metrics": {
+    "n_images": 124,
+    "n_gt_objects": 290,
+    "tp": 281,
+    "fp": 19,
+    "fn": 9,
+    "precision": 0.9366666666666666,
+    "recall": 0.9689655172413794,
+    "f1": 0.952542372881356,
+    "ap50": 0.9569807375267246,
+    "map50_95": 0.37367906308301374
+  },
+  "identical_evaluation_artifact_sha256": {
+    "metrics.json": "aec221dbbe69b7bc150ac55a6852fed4edfe1305b4d6bd361e5910ceae0b55aa",
+    "metrics.csv": "8a1f1c8c67d27f5eb6e19f4ca1c29f78ef291da703ad008d8e4e4b196859bee1",
+    "object_predictions.csv": "6d0d7e4dc6ad052a2f6e4113eed8a6c66d951df93dd06812bad7cf6ca0e9fca6",
+    "fp_predictions.csv": "4fd7fb4afc8459caa937aacb7173d7ef7a2df287cdc14927a10e55aee55547e0",
+    "error_types.csv": "6d0d7e4dc6ad052a2f6e4113eed8a6c66d951df93dd06812bad7cf6ca0e9fca6",
+    "confidence_sweep.csv": "ecb22888a48e9e5b7ecdbf9dfaee092ed757d0c11d743d2dd253d817a9a1b2f6",
+    "image_predictions.csv": "459308d5b86c25783729ab5257e0238e1001e2029bacda40135b8082e1475a8d"
+  }
+}

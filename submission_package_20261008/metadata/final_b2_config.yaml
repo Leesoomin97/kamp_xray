@@ -1,0 +1,31 @@
+experiment: B2-640
+task: object_detection
+architecture: yolov8n
+representation: conservative
+augmentation_profile: visibility
+imgsz: 640
+epochs: 30
+batch: 8
+seed: 42
+deterministic: true
+freeze: 0
+optimizer: AdamW
+lr0: 0.01
+lrf: 0.1
+weight_decay: 0.0005
+warmup_epochs: 0.5
+box: 7.5
+dfl: 1.5
+cls: 0.5
+oversampling_mode: none
+hsv_v: 0.05
+mosaic: 0.5
+folds: [1, 2, 3, 4]
+frozen_fold_sha256: 963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8
+evaluation:
+  prediction_confidence_floor: 0.001
+  reporting_confidence: 0.25
+  matching_iou: 0.5
+  nms_iou: 0.7
+  max_det: 300
+

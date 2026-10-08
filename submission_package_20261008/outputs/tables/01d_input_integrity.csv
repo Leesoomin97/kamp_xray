@@ -1,0 +1,16 @@
+﻿check,expected,observed,status,frozen_fold_sha256,notes
+frozen_fold_sha256,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+eligible_rows,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+unique_eligible_stems,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+unique_canonical_raw_paths,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+unique_official_txt_paths,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+frozen_fold_rows,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+unique_frozen_stems,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+frozen_fold_ids,4,4,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+reference_objects,1147,1147,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+artifact_object_rows,1147,1147,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+mask_quality_rows,1147,1147,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+artifact_image_rows,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+allowlist_fold_stems_match,500,500,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+missing_raw,0,0,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
+missing_txt,0,0,OK,963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8,Frozen assignment read only; no rewrite.
