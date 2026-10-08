@@ -1,168 +1,97 @@
-# KAMP 제조 X-ray 이물질 탐지
+# KAMP 제조 X-ray 이물질 탐지 — B2-640
 
-## 프로젝트 개요
+식품 완제품 X-ray 영상에서 이물질 위치를 탐지하고, 미탐·오탐 조건과 분포 변화에 따른 성능 저하를 분석한 프로젝트이다. 공식 TXT annotation을 ground truth로 사용하며, 원본 BMP의 색상 사각형은 annotation artifact로 취급해 predictive feature로 사용하지 않도록 통제했다.
 
-이 프로젝트는 X-ray 완제품 영상에서 이물질을 검출하고, 모델 미탐과 연관된 영상 조건을 분석한 K-인공지능 제조데이터 분석 경진대회 작업물이다.
+## 저장소와 재현 패키지의 구분
 
-- 공식 ground truth는 제공된 TXT bounding-box label이다.
-- 원본 BMP에 포함된 색상 사각형은 annotation 과정에서 생긴 chromatic artifact로 취급한다.
-- 색상 사각형 자체가 이물질 검출 shortcut으로 사용되지 않도록 Conservative artifact-control representation을 사용한다.
-- 원본 데이터는 읽기 전용이며, 파생 영상과 실험 산출물은 프로젝트의 `outputs/` 및 `models/` 아래에 분리한다.
+이 `main` 브랜치는 포트폴리오와 코드 검토를 위한 경량 저장소이다. source code, configuration, 소형 metadata와 분석 evidence를 포함하지만 원본/처리 영상, `*.pt` weight와 제출 ZIP은 포함하지 않는다.
 
-## 최종 모델
+데이터·최종 Fold1~4 weight·고정 pretrained asset까지 포함한 전체 재현 패키지는 [GitHub Release](https://github.com/Leesoomin97/kamp_xray/releases/tag/submission-2026-kamp-final)에서 제공한다. 아래 FULL/QUICK 명령은 해당 패키지를 내려받아 압축 해제한 루트에서 실행하는 절차이다.
 
-최종 선택 모델은 **B2-640**이다.
+## 최종 모델과 성능
 
-| 항목 | 값 |
+최종 선택 모델은 **B2-640 YOLOv8n**이다.
+
+| 항목 | 설정 |
 |---|---|
-| Detector | YOLOv8n |
-| Representation | Conservative artifact control |
-| Input size | 640 |
-| Augmentation profile | `visibility` |
-| Training-only `hsv_v` | 0.05 |
-| Epochs | 30 |
-| Batch | 8 |
-| Freeze | 0, full fine-tuning |
-| Seed | 42 |
-| Box / DFL / CLS loss weights | 7.5 / 1.5 / 0.5 |
-| Oversampling | none |
-| Initialization | Official Ultralytics COCO `yolov8n.pt` |
+| Representation | conservative artifact control |
+| Input / epochs / batch | 640 / 30 / 8 |
+| Augmentation | visibility, `hsv_v=0.05`, mosaic 0.5 |
+| Optimizer | AdamW, `lr0=0.01`, `lrf=0.1`, weight decay 0.0005 |
+| Loss weights | `box=7.5`, `dfl=1.5`, `cls=0.5` |
+| Seed / freeze / oversampling | 42 / 0 / none |
 
-W&B는 선택적인 학습 추적 계층일 뿐이다. 실험의 source of truth는 로컬/KAMP CSV, JSON, YAML, frozen-fold metadata와 checkpoint hash이다.
+Reporting confidence 0.25, GT matching IoU 0.50의 고정 4-fold development OOF 결과는 다음과 같다.
 
-## 검증 방식
+| Images | GT objects | TP | FP | FN | Precision | Recall | F1 | AP50 | mAP50-95 |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 500 | 1,147 | 1,121 | 51 | 26 | 0.9564846416382252 | 0.977332170880558 | 0.966796032772747 | 약 0.96039 | 약 0.38077 |
 
-- 10초 temporal component와 수동 승인 similarity link를 유지한 deterministic group-aware 4-fold CV를 사용한다.
-- frozen assignment: `outputs/tables/01c_final_validation_folds.csv`
-- 개발 OOF 범위: 500 images, 1,147 GT objects
-- 동일 fold/seed/config 재현 run이 존재한다.
-- 이 결과는 동일 frozen development corpus를 이용한 model-development 결과이며, untouched external held-out test 성능으로 표현하지 않는다.
-
-## 최종 OOF 성능
-
-Reporting confidence 0.25 및 GT matching IoU 0.50 기준:
-
-| TP | FP | FN | Precision | Recall | F1 | AP50 | mAP50-95 |
-|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1121 | 51 | 26 | 0.9564846416382252 | 0.977332170880558 | 0.966796032772747 | 0.96039 | 0.38077 |
-
-`0.25`는 성능 보고용 threshold이며 운영 안전 threshold가 아니다.
-
-## Stage 3 운영 후보
-
-개발 OOF에서 검토한 image-level 3-way routing 후보는 다음과 같다.
-
-- **DETECT:** image-level maximum raw confidence ≥ 0.45
-- **REINSPECT:** 0.25 ≤ maximum raw confidence < 0.45
-- **PASS candidate:** maximum raw confidence < 0.25
-
-GT-positive 개발 영상 500장에서는 DETECT 499, REINSPECT 1, PASS candidate 0이었고 DETECT+REINSPECT가 500/500을 포착했다. 그러나 정상 제품 영상이 없으므로 specificity, true-negative PASS safety 및 실제 현장 workload는 검증되지 않았다. 0.25/0.45는 운영 확정값이 아니라 development OOF 후보값이다.
+이는 frozen development corpus의 OOF 결과이며 official external held-out test 성능이 아니다.
 
 ## 주요 디렉터리
 
-- `src/`: 재현 가능한 전처리, 학습, 평가, 집계 및 분석 코드
-- `configs/`: Stage 6 등 구조 설정
+- `src/`: 전처리, 학습, 평가, OOF 집계, prediction export 및 분석 코드
+- `configs/`: 모델/configuration 파일
+- `metadata/`: 최종 B2 설정과 재현 범위 metadata
 - `outputs/tables/`: CSV/JSON evidence
 - `outputs/eda/`: 분석 및 의사결정 문서
-- `outputs/run_manifests/`: 실행 이력과 생성 파일 manifest
-- `models/`: Git에 포함 가능한 args, metadata, results; `*.pt`는 제외
-- `final_b2_weights_backup/`: 로컬 별도 checkpoint 보관소이며 Git에서 제외
+- `outputs/run_manifests/`: 실행 이력과 provenance manifest
+- `metadata/`와 `outputs/`: portable config, 집계 metric 및 분석 evidence를 보존
 
-원본 dataset, `outputs/processed_data/`, cache, W&B local cache, archive chunk와 model weight는 Git source snapshot에 포함하지 않는다.
+## 검증 환경
 
-## 환경 설치
-
-Python 환경에서 다음을 실행한다.
+검증된 KAMP 환경은 Python 3.11.9, PyTorch 2.5.0+cu121, torchvision 0.20.0+cu121, Ultralytics 8.4.158, Tesla V100-SXM2-32GB이다.
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+which python
+python --version
+python -m pip --version
 ```
 
-PyTorch GPU 빌드는 CUDA 및 실행 플랫폼에 맞는 공식 PyTorch 설치 방법이 필요할 수 있다. 최종 B2 KAMP run은 Python 3.11.9, PyTorch 2.5.0+cu121, Ultralytics 8.4.158 환경에서 수행됐으며, 로컬 CPU 복구 환경의 직접 dependency pins는 `requirements.txt`와 `outputs/eda/environment_audit.md`에 기록되어 있다. W&B는 `--use-wandb`를 지정한 학습에서만 lazy import되며, 제출용 evaluation/inference에는 인증이나 인터넷 연결이 필요하지 않다.
+## 전체 재현(FULL reproduction)
 
-## 데이터 준비
-
-원본 dataset은 저장소에 포함되지 않는다. 승인된 Stage 1D Conservative 파생 영상과 frozen fold metadata가 준비된 프로젝트 루트에서 다음 명령으로 Stage 2A 학습용 image/label/split 구조를 검증·구성한다.
+Release의 전체 재현 패키지 루트에서 다음 명령은 전처리 → 고정 fold materialization → 4-fold 학습 → held-out-fold 추론/평가 → OOF 집계 → prediction export를 순차 수행한다.
 
 ```bash
-python src/prepare_stage2a_dataset.py --workspace "/path/to/project"
+python src/run_submission_pipeline.py full --tag kamp_full_reproduction_v1 --device 0 --workers 2
 ```
 
-## B2-640 단일 fold 학습 재현
+새 checkpoint는 `models/stage2a/kamp_full_reproduction_v1_fold1/weights/best.pt`부터 `fold4`까지 생성되고, 평가·OOF·prediction 결과는 `reproduction_runs/kamp_full_reproduction_v1/`에 저장된다.
 
-다음은 fold 1 단일 run 예시다. 실행 전 승인된 `yolov8n.pt`를 `models/stage2a/pretrained/yolov8n.pt`에 두어야 하며, runner는 기록된 SHA-256을 검증한다. 기존 run과 충돌하지 않는 새 `--run-name`을 사용한다.
+학습 초기화 asset은 전체 패키지의 `models/stage2a/pretrained/yolov8n.pt`이며 크기는 6,549,796 bytes, SHA-256은 `f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36`이다.
+
+## 빠른 검증(QUICK verification)
+
+QUICK mode는 학습하지 않고 전체 패키지에 포함된 최종 Fold1~4 weight로 inference/evaluation/OOF aggregation을 검증한다. FULL reproduction을 대체하지 않는다.
 
 ```bash
-python src/run_stage2a_training.py \
-  --project-root "/path/to/project" \
-  --representation conservative \
-  --model yolov8n \
-  --augmentation-profile visibility \
-  --fold 1 \
-  --imgsz 640 \
-  --epochs 30 \
-  --batch 8 \
-  --device 0 \
-  --freeze 0 \
-  --seed 42 \
-  --workers 2 \
-  --box 7.5 \
-  --dfl 1.5 \
-  --cls 0.5 \
-  --oversampling-mode none \
-  --run-name b2_640_fold1_reproduction
+python src/run_submission_pipeline.py quick --tag quick_verification_v1 --device 0
 ```
 
-W&B 추적이 필요할 때만 `--use-wandb`, `--wandb-entity`, `--wandb-project`, `--wandb-group`을 추가한다. W&B를 사용하지 않아도 학습 metadata와 run manifest는 로컬에 저장된다.
+## Prediction artifact
 
-## 단일 fold 평가 재현
+전체 패키지에는 다음 frozen 4-fold development OOF 결과가 포함된다.
 
-```bash
-python src/evaluate_stage2a_run.py \
-  --project-root "/path/to/project" \
-  --run-dir models/stage2a/b2_640_fold1_reproduction \
-  --output-dir outputs/stage2a_runs/b2_640_fold1_reproduction \
-  --device 0 \
-  --conf-floor 0.001 \
-  --report-confidence 0.25 \
-  --nms-iou 0.7 \
-  --max-det 300
-```
+- `predictions/b2_640_frozen_4fold_oof_bbox_conf025.csv`: 1,172행, 500 image IDs
+- `predictions/b2_640_frozen_4fold_oof_image_summary_conf025.csv`: 500행
 
-평가 결과는 `metrics.json`, `metrics.csv`, `confidence_sweep.csv`, image/object/FP prediction CSV 및 evaluation metadata로 저장된다.
+각 이미지는 자신의 fold를 제외하고 학습된 모델로 예측했다. 주최 측에서 별도 external test dataset과 고정 prediction schema를 제공하지 않아 이를 external test prediction이라고 부르지 않는다.
 
-## 4-fold OOF aggregation
+## 재현성과 한계
 
-네 fold 평가가 모두 완료된 뒤 한 번만 집계한다. 출력 디렉터리는 비어 있거나 존재하지 않아야 한다.
+- 고정 fold SHA-256: `963116078893679b859c2d5150a1ba90700ad207c54ae385a1b6acac255b98a8`
+- Fold1은 동일 KAMP 환경·seed·fold·recipe 재실행에서 TP 281, FP 19, FN 9, Precision 0.9366666667, Recall 0.9689655172, F1 0.9525423729, AP50 0.9569807375, mAP50-95 0.3736790631을 재현했다.
+- 서로 다른 GPU 간 bitwise identity는 주장하지 않는다.
+- 500개 development image가 모두 GT-positive이므로 specificity, true-negative 성능, automatic PASS safety와 정상제품 false-alarm workload는 검증하지 않았다.
+- NO DETECTION은 PASS를 의미하지 않는다.
+- Confidence 0.25, 0.40, 0.45는 development comparison point이며 범용 operating threshold가 아니다. 현장 적용 전 정상·이물 자료를 이용한 site-specific validation이 필요하다.
+- W&B는 optional tracking layer이며 local CSV/JSON/YAML과 frozen-fold metadata가 source of truth이다.
 
-```bash
-python src/aggregate_stage2a_oof.py \
-  --project-root "/path/to/project" \
-  --fold-results \
-    outputs/stage2a_runs/b2_640_fold1_reproduction \
-    outputs/stage2a_runs/b2_640_fold2_reproduction \
-    outputs/stage2a_runs/b2_640_fold3_reproduction \
-    outputs/stage2a_runs/b2_640_fold4_reproduction \
-  --output-dir outputs/tables/b2_640_reproduction_oof \
-  --run-name b2_640_reproduction_oof
-```
+## 제출 자산 보존
 
-## Manifest 역할
-
-`stage2b_b2_visibility_yolov8n_conservative_640_fold*_e30_v1_original_evaluation_manifest.json`은 KAMP에서 수행한 원래 Stage 2 평가 경로를 보존한다. 대응하는 `*_stage3_reanalysis_manifest.json`은 이후 로컬 Stage 3 저신뢰 재평가 경로를 보존한다. 같은 run의 서로 다른 평가 단계를 나타내므로 한쪽을 다른 쪽으로 덮어쓰지 않는다.
-
-## 향후 test inference
-
-최종 test inference entry point와 제출 prediction 파일 형식은 추후 확정 예정이다. 현재 저장소의 development evaluation script를 official held-out test용 코드라고 간주하지 않는다.
-
-## 한계
-
-- 500개 development image가 모두 GT-positive이므로 specificity, true-negative 성능과 PASS 안전성을 검증할 수 없다.
-- 외부 untouched held-out 최종 평가는 수행되지 않았다.
-- 실제 물질 밀도, 재질, 두께에 대한 GT가 없으며 이를 영상에서 추론하지 않는다.
-- contrast와 CNR-like 값은 image-derived proxy이다.
-- product boundary는 GT segmentation이 아닌 inferred proxy이다.
-- bbox shape evidence는 제한적이다.
-- confidence 0.25, 0.40, 0.45는 development candidates이며 운영 확정 threshold가 아니다.
-- 색상 사각형 shortcut 위험을 줄이기 위해 Conservative artifact control을 적용했지만 실제 X-ray signal이 완벽히 보존됐다고 단정하지 않는다.
-- Stage 6 Fold 1 실험은 exploratory screening이며 4-fold 최종 성능으로 해석하지 않는다.
+최종 제출 ZIP은 Git repository에 commit하지 않고 Release asset으로 분리했다. 제출본 SHA-256은 `44ce84ab7ffcd2f176f41814352621bd9e835344898acf4f5d712def51e6394d`이다.

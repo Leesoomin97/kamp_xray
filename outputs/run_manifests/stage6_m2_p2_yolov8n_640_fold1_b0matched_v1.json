@@ -1,9 +1,0 @@
-{
-  "status": "EVALUATION_FAILED",
-  "stage": "Stage 6 evaluation",
-  "run_name": "stage6_m2_p2_yolov8n_640_fold1_b0matched_v1",
-  "project_root": "/home/kampuser/KAMP제조대회",
-  "evaluation_ended_utc": "2026-10-05T13:42:42.678534+00:00",
-  "evaluation_error_type": "FileExistsError",
-  "evaluation_error": "Evaluation output directory is not empty: /home/kampuser/KAMP제조대회/outputs/stage6_runs/stage6_m2_p2_yolov8n_640_fold1_b0matched_v1"
-}

@@ -39,9 +39,28 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) 
 def link_or_copy(source: Path, target: Path) -> str:
     target.parent.mkdir(parents=True, exist_ok=True)
     if target.exists():
-        if target.stat().st_size != source.stat().st_size:
-            raise RuntimeError(f"Existing target size mismatch: {target}")
-        return "existing"
+        if sha256(target) == sha256(source):
+            return "existing"
+        if source.suffix.lower() != ".png" or target.suffix.lower() != ".png":
+            raise RuntimeError(f"Existing target content mismatch: {target}")
+        # PNG byte streams can differ across zlib/platform versions while decoding
+        # to identical pixels. Accept only exact pixel equivalence, then replace the
+        # packaged encoding with the just-generated source so the manifest hash and
+        # downstream integrity table remain exact.
+        import cv2
+        import numpy as np
+
+        source_image = cv2.imdecode(np.fromfile(str(source), dtype=np.uint8), cv2.IMREAD_UNCHANGED)
+        target_image = cv2.imdecode(np.fromfile(str(target), dtype=np.uint8), cv2.IMREAD_UNCHANGED)
+        if source_image is None or target_image is None or not np.array_equal(source_image, target_image):
+            raise RuntimeError(f"Existing target pixel mismatch: {target}")
+        target.unlink()
+        try:
+            os.link(source, target)
+            return "replaced_pixel_equivalent_hardlink"
+        except OSError:
+            shutil.copy2(source, target)
+            return "replaced_pixel_equivalent_copy"
     try:
         os.link(source, target)
         return "hardlink"

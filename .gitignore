@@ -276,3 +276,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# KAMP lightweight public repository exclusions
+4. X-ray 검사장비 AI 데이터셋/
+reproduction_runs/
+submission_package_*/
+outputs/stage6_candidate_redetection/fold1/local_predictions.csv
+models/

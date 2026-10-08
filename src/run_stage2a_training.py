@@ -210,7 +210,9 @@ def main(args: argparse.Namespace) -> None:
             "oversampling_manifest": str(oversampling_manifest.resolve()) if oversampling_manifest else None,
         })
         write_json(pending_path, metadata); save_run_manifest(project_root, args.run_name, metadata)
-        os.environ.setdefault("YOLO_CONFIG_DIR", str(project_root / "outputs" / "cache" / "ultralytics"))
+        yolo_config_dir = project_root / "outputs" / "cache" / "ultralytics"
+        yolo_config_dir.mkdir(parents=True, exist_ok=True)
+        os.environ.setdefault("YOLO_CONFIG_DIR", str(yolo_config_dir))
         import torch
         from ultralytics import YOLO
 
@@ -349,7 +351,8 @@ if __name__ == "__main__":
     parser.add_argument("--experiment-family", default="B2-final-performance")
     parser.add_argument("--oversampling-mode", choices=tuple(OVERSAMPLING_RULES), default="none")
     parser.add_argument("--use-wandb", action="store_true", help="Enable optional fail-open training telemetry.")
-    parser.add_argument("--wandb-entity", default="milpasoomin-no")
+    parser.add_argument("--wandb-entity", default=None,
+                        help="Optional W&B entity. No personal entity is embedded in the submission package.")
     parser.add_argument("--wandb-project", default="KAMP-manufacturing-xray")
     parser.add_argument("--wandb-group", help="Defaults to B2-<imgsz> or B2-hardos-<imgsz>.")
     parser.add_argument("--wandb-log-artifacts", action="store_true", help="Optionally upload best.pt and lightweight evidence files.")

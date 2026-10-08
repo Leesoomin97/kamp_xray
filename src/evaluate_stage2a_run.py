@@ -44,7 +44,9 @@ def main(args: argparse.Namespace) -> None:
         raise FileExistsError(f"Evaluation output directory is not empty: {output}")
     output.parent.mkdir(parents=True, exist_ok=True)
 
-    os.environ.setdefault("YOLO_CONFIG_DIR", str(workspace / "outputs" / "cache" / "ultralytics"))
+    yolo_config_dir = workspace / "outputs" / "cache" / "ultralytics"
+    yolo_config_dir.mkdir(parents=True, exist_ok=True)
+    os.environ.setdefault("YOLO_CONFIG_DIR", str(yolo_config_dir))
     from ultralytics import YOLO
 
     image_paths = [workspace / Path(selected[stem]["image_path"]) for stem in expected_stems]
